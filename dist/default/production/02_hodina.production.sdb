@@ -1,0 +1,575 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K22 ]
+[d frameptr 4065 ]
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"46 /home/home/Desktop/02_hodina/display.c
+[v _lcd_write lcd_write `(v  1 e 1 0 ]
+"63
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+"76
+[v _lcd_putchar lcd_putchar `(v  1 e 1 0 ]
+"84
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"132
+[v _lcd_goto lcd_goto `(v  1 e 1 0 ]
+"142
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"11 /home/home/Desktop/02_hodina/i2c2.c
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+"26
+[v _I2C_Set_Address I2C_Set_Address `(v  1 e 1 0 ]
+"47
+[v _I2C_Read_Block I2C_Read_Block `(v  1 e 1 0 ]
+"64
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+"81
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+"99
+[v _I2C_Write_B I2C_Write_B `(v  1 e 1 0 ]
+"128
+[v _I2C_Read_B I2C_Read_B `(uc  1 e 1 0 ]
+"176
+[v _I2C_NoAck_Out I2C_NoAck_Out `(v  1 e 1 0 ]
+"189
+[v _I2C_Ack_Out I2C_Ack_Out `(v  1 e 1 0 ]
+"16 /home/home/Desktop/02_hodina/simdelay.c
+[v _Delay100Us Delay100Us `(v  1 e 1 0 ]
+"24
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"55 /home/home/Desktop/02_hodina/yunimain.c
+[v _displayInit displayInit `(v  1 e 1 0 ]
+"62
+[v _rtcInit rtcInit `(v  1 e 1 0 ]
+"76
+[v _init init `(v  1 e 1 0 ]
+"97
+[v _getTime getTime `(v  1 e 1 0 ]
+"109
+[v _setTime setTime `(v  1 e 1 0 ]
+"127
+[v _printBinary printBinary `(v  1 e 1 0 ]
+"140
+[v _display display `(v  1 e 1 0 ]
+"190
+[v _pressedButton pressedButton `(i  1 e 2 0 ]
+"212
+[v _readAndSet readAndSet `(v  1 e 1 0 ]
+"235
+[v _clockSetup clockSetup `(v  1 e 1 0 ]
+"284
+[v _clockStop clockStop `(v  1 e 1 0 ]
+"289
+[v _main main `(v  1 e 1 0 ]
+"97 /opt/microchip/xc8/v2.05/pic/include/pic18f46k22.h
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+"198
+[v _ANSELD ANSELD `VEuc  1 e 1 @3899 ]
+[s S321 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"6635
+[s S330 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S339 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 AN13 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S348 . 1 `uc 1 FLT0 1 0 :1:0 
+`uc 1 C12IN3M 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 C12IN2M 1 0 :1:3 
+`uc 1 T5G 1 0 :1:4 
+`uc 1 T1G 1 0 :1:5 
+]
+[s S355 . 1 `uc 1 SRI 1 0 :1:0 
+`uc 1 C12IN3N 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 C12IN2N 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CCP3 1 0 :1:5 
+]
+[s S362 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CTED1 1 0 :1:2 
+`uc 1 CTED2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T3CKI 1 0 :1:5 
+]
+[s S368 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 P2A 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 P3A 1 0 :1:5 
+]
+[s S373 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S376 . 1 `S321 1 . 1 0 `S330 1 . 1 0 `S339 1 . 1 0 `S348 1 . 1 0 `S355 1 . 1 0 `S362 1 . 1 0 `S368 1 . 1 0 `S373 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES376  1 e 1 @3969 ]
+[s S88 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"7205
+[s S638 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 P2B 1 0 :1:2 
+`uc 1 P2C 1 0 :1:3 
+`uc 1 P2D 1 0 :1:4 
+`uc 1 P1B 1 0 :1:5 
+`uc 1 P1C 1 0 :1:6 
+`uc 1 P1D 1 0 :1:7 
+]
+[s S646 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP4 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 TX2 1 0 :1:6 
+`uc 1 RX2 1 0 :1:7 
+]
+[s S652 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_SS2 1 0 :1:3 
+]
+[s S655 . 1 `uc 1 SCK2 1 0 :1:0 
+`uc 1 SDI2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 nSS2 1 0 :1:3 
+`uc 1 SDO2 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK2 1 0 :1:6 
+`uc 1 DT2 1 0 :1:7 
+]
+[s S664 . 1 `uc 1 SCL2 1 0 :1:0 
+`uc 1 SDA2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SS2 1 0 :1:3 
+]
+[s S669 . 1 `uc 1 AN20 1 0 :1:0 
+`uc 1 AN21 1 0 :1:1 
+`uc 1 AN22 1 0 :1:2 
+`uc 1 AN23 1 0 :1:3 
+`uc 1 AN24 1 0 :1:4 
+`uc 1 AN25 1 0 :1:5 
+`uc 1 AN26 1 0 :1:6 
+`uc 1 AN27 1 0 :1:7 
+]
+[u S678 . 1 `S88 1 . 1 0 `S638 1 . 1 0 `S646 1 . 1 0 `S652 1 . 1 0 `S655 1 . 1 0 `S664 1 . 1 0 `S669 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES678  1 e 1 @3971 ]
+"7672
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"7784
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"7896
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S119 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"7923
+[s S128 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S137 . 1 `S119 1 . 1 0 `S128 1 . 1 0 ]
+[v _LATDbits LATDbits `VES137  1 e 1 @3980 ]
+[s S55 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"8025
+[s S59 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S63 . 1 `S55 1 . 1 0 `S59 1 . 1 0 ]
+[v _LATEbits LATEbits `VES63  1 e 1 @3981 ]
+"8282
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"8504
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"8726
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S79 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"8758
+[u S97 . 1 `S79 1 . 1 0 `S88 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES97  1 e 1 @3989 ]
+[s S31 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 WPUE3 1 0 :1:7 
+]
+"8972
+[s S37 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S41 . 1 `S31 1 . 1 0 `S37 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES41  1 e 1 @3990 ]
+[s S166 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"15871
+[s S168 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S171 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S174 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S177 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S180 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S189 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S195 . 1 `S166 1 . 1 0 `S168 1 . 1 0 `S171 1 . 1 0 `S174 1 . 1 0 `S177 1 . 1 0 `S180 1 . 1 0 `S189 1 . 1 0 ]
+[v _RCONbits RCONbits `VES195  1 e 1 @4048 ]
+"16046
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S233 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16958
+[s S242 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S251 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S255 . 1 `S233 1 . 1 0 `S242 1 . 1 0 `S251 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES255  1 e 1 @4082 ]
+"34 /home/home/Desktop/02_hodina/display.c
+[v _LCD_RS_flag LCD_RS_flag `VEi  1 s 2 LCD_RS_flag ]
+[s S24 . 5 `uc 1 controlReg 1 0 `uc 1 milisecReg 1 1 `uc 1 secondsReg 1 2 `uc 1 minutesReg 1 3 `uc 1 hoursReg 1 4 ]
+"35 /home/home/Desktop/02_hodina/yunimain.c
+[v _RTC RTC `S24  1 e 5 0 ]
+"43
+[v _hoursT hoursT `uc  1 e 1 0 ]
+"44
+[v _hoursD hoursD `uc  1 e 1 0 ]
+"45
+[v _minutesT minutesT `uc  1 e 1 0 ]
+"46
+[v _minutesD minutesD `uc  1 e 1 0 ]
+"47
+[v _secondsT secondsT `uc  1 e 1 0 ]
+"48
+[v _secondsD secondsD `uc  1 e 1 0 ]
+"53
+[v _mode mode `uc  1 e 1 0 ]
+"289
+[v _main main `(v  1 e 1 0 ]
+{
+"314
+} 0
+"76
+[v _init init `(v  1 e 1 0 ]
+{
+"92
+} 0
+"62
+[v _rtcInit rtcInit `(v  1 e 1 0 ]
+{
+"74
+} 0
+"55
+[v _displayInit displayInit `(v  1 e 1 0 ]
+{
+"60
+} 0
+"142 /home/home/Desktop/02_hodina/display.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"174
+} 0
+"97 /home/home/Desktop/02_hodina/yunimain.c
+[v _getTime getTime `(v  1 e 1 0 ]
+{
+"104
+} 0
+"47 /home/home/Desktop/02_hodina/i2c2.c
+[v _I2C_Read_Block I2C_Read_Block `(v  1 e 1 0 ]
+{
+[v I2C_Read_Block@i i `uc  1 a 1 wreg ]
+"49
+[v I2C_Read_Block@j j `uc  1 a 1 11 ]
+"47
+[v I2C_Read_Block@i i `uc  1 a 1 wreg ]
+[v I2C_Read_Block@p_dta p_dta `*.39uc  1 p 2 4 ]
+"50
+[v I2C_Read_Block@i i `uc  1 a 1 10 ]
+"58
+} 0
+"128
+[v _I2C_Read_B I2C_Read_B `(uc  1 e 1 0 ]
+{
+[v I2C_Read_B@ack ack `uc  1 a 1 wreg ]
+"130
+[v I2C_Read_B@dta dta `uc  1 a 1 3 ]
+"131
+[v I2C_Read_B@cnt cnt `uc  1 a 1 2 ]
+"128
+[v I2C_Read_B@ack ack `uc  1 a 1 wreg ]
+"130
+[v I2C_Read_B@ack ack `uc  1 a 1 1 ]
+"152
+} 0
+"176
+[v _I2C_NoAck_Out I2C_NoAck_Out `(v  1 e 1 0 ]
+{
+"184
+} 0
+"189
+[v _I2C_Ack_Out I2C_Ack_Out `(v  1 e 1 0 ]
+{
+"197
+} 0
+"140 /home/home/Desktop/02_hodina/yunimain.c
+[v _display display `(v  1 e 1 0 ]
+{
+"141
+[v display@tmp tmp `uc  1 a 1 8 ]
+"185
+} 0
+"127
+[v _printBinary printBinary `(v  1 e 1 0 ]
+{
+[v printBinary@number number `uc  1 a 1 wreg ]
+"128
+[v printBinary@i i `uc  1 a 1 5 ]
+"127
+[v printBinary@number number `uc  1 a 1 wreg ]
+"130
+[v printBinary@number number `uc  1 a 1 2 ]
+"132
+} 0
+"284
+[v _clockStop clockStop `(v  1 e 1 0 ]
+{
+"287
+} 0
+"235
+[v _clockSetup clockSetup `(v  1 e 1 0 ]
+{
+"237
+[v clockSetup@pos pos `i  1 a 2 19 ]
+"277
+} 0
+"109
+[v _setTime setTime `(v  1 e 1 0 ]
+{
+"111
+[v setTime@ptr ptr `*.39uc  1 a 2 6 ]
+"110
+[v setTime@i i `uc  1 a 1 8 ]
+"119
+} 0
+"81 /home/home/Desktop/02_hodina/i2c2.c
+[v _I2C_Stop I2C_Stop `(v  1 e 1 0 ]
+{
+"92
+} 0
+"26
+[v _I2C_Set_Address I2C_Set_Address `(v  1 e 1 0 ]
+{
+[v I2C_Set_Address@adr adr `uc  1 a 1 wreg ]
+[v I2C_Set_Address@adr adr `uc  1 a 1 wreg ]
+[v I2C_Set_Address@func func `uc  1 p 1 4 ]
+"29
+[v I2C_Set_Address@adr adr `uc  1 a 1 5 ]
+"39
+} 0
+"99
+[v _I2C_Write_B I2C_Write_B `(v  1 e 1 0 ]
+{
+[v I2C_Write_B@dta dta `uc  1 a 1 wreg ]
+"101
+[v I2C_Write_B@cnt cnt `uc  1 a 1 3 ]
+"99
+[v I2C_Write_B@dta dta `uc  1 a 1 wreg ]
+"101
+[v I2C_Write_B@dta dta `uc  1 a 1 2 ]
+"120
+} 0
+"64
+[v _I2C_Start I2C_Start `(v  1 e 1 0 ]
+{
+"75
+} 0
+"11
+[v _I2C_Wait I2C_Wait `(v  1 e 1 0 ]
+{
+"13
+[v I2C_Wait@cnt cnt `uc  1 a 1 0 ]
+"15
+} 0
+"212 /home/home/Desktop/02_hodina/yunimain.c
+[v _readAndSet readAndSet `(v  1 e 1 0 ]
+{
+[v readAndSet@pos pos `i  1 p 2 10 ]
+[v readAndSet@valueReg valueReg `*.39uc  1 p 2 12 ]
+[v readAndSet@max max `i  1 p 2 14 ]
+"228
+} 0
+"190
+[v _pressedButton pressedButton `(i  1 e 2 0 ]
+{
+"204
+} 0
+"76 /home/home/Desktop/02_hodina/display.c
+[v _lcd_putchar lcd_putchar `(v  1 e 1 0 ]
+{
+[v lcd_putchar@s s `uc  1 a 1 wreg ]
+[v lcd_putchar@s s `uc  1 a 1 wreg ]
+[v lcd_putchar@s s `uc  1 a 1 1 ]
+"79
+} 0
+"132
+[v _lcd_goto lcd_goto `(v  1 e 1 0 ]
+{
+[v lcd_goto@pos pos `uc  1 a 1 wreg ]
+[v lcd_goto@pos pos `uc  1 a 1 wreg ]
+"134
+[v lcd_goto@pos pos `uc  1 a 1 1 ]
+"136
+} 0
+"7 /opt/microchip/xc8/v2.05/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"84 /home/home/Desktop/02_hodina/display.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@s s `*.25Cuc  1 p 2 1 ]
+"91
+} 0
+"63
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+{
+"68
+} 0
+"46
+[v _lcd_write lcd_write `(v  1 e 1 0 ]
+{
+[v lcd_write@c c `uc  1 a 1 wreg ]
+[v lcd_write@c c `uc  1 a 1 wreg ]
+"48
+[v lcd_write@c c `uc  1 a 1 0 ]
+"58
+} 0
+"24 /home/home/Desktop/02_hodina/simdelay.c
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+"25
+[v DelayMs@i i `ui  1 a 2 6 ]
+"24
+[v DelayMs@x x `ui  1 p 2 4 ]
+"27
+} 0
+"16
+[v _Delay100Us Delay100Us `(v  1 e 1 0 ]
+{
+"17
+[v Delay100Us@i i `ui  1 a 2 2 ]
+"16
+[v Delay100Us@x x `ui  1 p 2 0 ]
+"22
+} 0

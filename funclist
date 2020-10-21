@@ -1,0 +1,14 @@
+_init: CODE, 4720 0 86
+_lcd_puts: CODE, 4990 0 50
+__stringdata: SMALLCONST, 4097 0 45
+_lcd_puthex: CODE, 4806 0 72
+_lcd_putchar: CODE, 5086 0 18
+_main: CODE, 4144 0 322
+_ADC_read: CODE, 4878 0 60
+_DelayMs: CODE, 5040 0 26
+__initialization: CODE, 5104 0 0
+_lcd_goto: CODE, 5066 0 20
+_Delay100Us: CODE, 4938 0 52
+_lcd_write: CODE, 4634 0 86
+_lcd_init: CODE, 4466 0 168
+Total: 1005
